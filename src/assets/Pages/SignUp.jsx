@@ -3,11 +3,11 @@ import { useForm } from "@mantine/form";
 import { TextInput, PasswordInput } from "@mantine/core";
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-// import { useAuth0 } from "@auth0/auth0-react";
+//import { useAuth0 } from "@auth0/auth0-react";
 
 
 const SignUp = () => {
-  // const {logout, isAuthenticated} = useAuth0();
+  // const {logout} = useAuth0();
 
 
 
@@ -102,7 +102,7 @@ const SignUp = () => {
         {errors.confirmpassword && (
           <span className="error-message">{errors.confirmpassword}</span>
         )}
-        <button type="submit" className="submit-btn">Sign Up</button>
+        <button type="submit"  className="submit-btn">Sign Up</button>
       </form>
       <p className="auth-link">
         Already have an account? <a href="/login">Login</a>
